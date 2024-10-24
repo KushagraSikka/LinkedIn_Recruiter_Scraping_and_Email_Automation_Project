@@ -22,25 +22,25 @@ def main():
         log_message(f"Error during scraping: {e}")
         return
 
-    # log_message(f"Successfully scraped {len(recruiter_data)} profiles.")
+    log_message(f"Successfully scraped {len(recruiter_data)} profiles.")
 
-    # # Step 2: Generate Personalized Emails
-    # log_message("Generating personalized emails for each recruiter...")
+    # Step 2: Generate Personalized Emails
+    log_message("Generating personalized emails for each recruiter...")
 
     # for recruiter in recruiter_data:
-        recruiter_name = recruiter.get("name")
-        company_name = recruiter.get("company")
-        job_title = recruiter.get("job_title")
-        email_address = recruiter.get("email")
-        # Replace with dynamic skills based on the job
-        skills = "Python, Machine Learning, DevOps"
-        # Customize this
-        achievements = "Built a machine learning pipeline that reduced processing time by 30%."
+    recruiter_name = recruiter.get("name")
+    company_name = recruiter.get("company")
+    job_title = recruiter.get("job_title")
+    email_address = recruiter.get("email")
+    # Replace with dynamic skills based on the job
+    skills = "Python, Machine Learning, DevOps"
+     # Customize this
+     achievements = "Built a machine learning pipeline that reduced processing time by 30%."
 
-        log_message(
-            f"Generating email for {recruiter_name} at {company_name}...")
+      log_message(
+           f"Generating email for {recruiter_name} at {company_name}...")
 
-        try:
+       try:
             email_content = generate_personalized_email(
                 recruiter_name, company_name, job_title, skills, achievements)
             if not email_content:
