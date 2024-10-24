@@ -37,17 +37,17 @@ def generate_personalized_email(recruiter_name, company_name, job_title, your_sk
         return None
 
 
-# Example usage
-if __name__ == "__main__":
-    recruiter_name = "John Doe"
-    company_name = "Tech Innovators"
-    job_title = "Software Engineer"
-    your_skills = "Python, Machine Learning, DevOps"
-    achievements = "building a machine learning pipeline that improved processing time by 30%"
+# # Example usage
+# if __name__ == "__main__":
+#     recruiter_name = "John Doe"
+#     company_name = "Tech Innovators"
+#     job_title = "Software Engineer"
+#     your_skills = "Python, Machine Learning, DevOps"
+#     achievements = "building a machine learning pipeline that improved processing time by 30%"
 
-    email = generate_personalized_email(
-        recruiter_name, company_name, job_title, your_skills, achievements)
+#     email = generate_personalized_email(
+#         recruiter_name, company_name, job_title, your_skills, achievements)
 
-    if email:
-        print("\nGenerated Email:\n")
-        print(email)
+#     if email:
+#         print("\nGenerated Email:\n")
+#         print(email)
