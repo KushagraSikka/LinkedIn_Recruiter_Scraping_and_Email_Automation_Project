@@ -9,18 +9,18 @@ from src.utils.logger import log_message
 load_dotenv()
 
 
-def main():
-    # Step 1: Scrape LinkedIn Profiles
-    log_message("Starting LinkedIn profile scraping...")
+# def main():
+#     # Step 1: Scrape LinkedIn Profiles
+#     log_message("Starting LinkedIn profile scraping...")
 
-    try:
-        recruiter_data = scrape_linkedin_profiles()
-        if not recruiter_data:
-            log_message("No recruiter data found. Exiting the process.")
-            return
-    except Exception as e:
-        log_message(f"Error during scraping: {e}")
-        return
+#     try:
+#         recruiter_data = scrape_linkedin_profiles()
+#         if not recruiter_data:
+#             log_message("No recruiter data found. Exiting the process.")
+#             return
+#     except Exception as e:
+#         log_message(f"Error during scraping: {e}")
+#         return
 
     log_message(f"Successfully scraped {len(recruiter_data)} profiles.")
 
